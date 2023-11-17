@@ -5,9 +5,9 @@
 !!! note
     This section draft includes general directions on how to integrate an Identity and Access Management system in a range of B2B and B2B2C setups. 
 
-Here at IAM Auth, we allow B2B (business-to-business) customers to integrate Identity and Account Management into their services. 
+Here at Transmit, we allow B2B (business-to-business) customers to integrate Identity and Account Management into their services. 
 
-From a broader perspective, our platform enables B2B customers to: 
+From a broad perspective, our platform enables B2B customers to: 
 
 - Enable organizations, e.g., the suppliers, and their employees to access corporate apps
 - Grant and revoke organization and user access to apps and resources   

@@ -4,7 +4,7 @@
     Example spec using Stoplight (free tier): [Stoplight example](https://vassily.stoplight.io/docs/api-docs/branches/main/7feb65ed9ff60-stylesheet-model).  
 
 
-## Top level structure
+## Structure
 
 The top level structure of the stylesheet is as follows:  
 
@@ -60,7 +60,7 @@ To reuse properties, utilize [style variables](#style-variables).
 The available properties depend on the element type. Refer to [List of available properties]() for more information. 
 
 
-## Style variables 
+## Variables 
 
 Style variables can be reused throughout the `styles` section. These variables are defined within the `values` object.
 
@@ -81,7 +81,7 @@ Here is an example of a `values` section:
 }
 ```
 
-## Style matching logic  
+## Style matching   
 
 We illustrate this section using the following example rulesets:
 

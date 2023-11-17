@@ -107,7 +107,6 @@ In addition to inviting a member via email, you can create a UI for self-serving
 When saving the user, the platform marks their account as `Pending` and sends the user a confirmation message. When the user clicks the confirmation link and starts using the account, the platform marks the account as `Active`.  
 
 !!! note
-
     You can invite a user to multiple organizations.
     If you use a hosted application, users who have memberships in multiple organizations 
 

@@ -1,8 +1,13 @@
-# Welcome
+# Welcome  
 
-Feel free to take a look at a few documentation examples. 
+Welcome to my site and please take a look at a few documentation examples. 
 
-## A video to get started  
+If you like the examples and need quality technical content, reach out to me on [LinkedIn](https://www.linkedin.com/in/vassily-lapitsky-b4236a16/). 
+
+!!! note
+    The site is under construction and doesn't provide all materials. 
+
+## Video example    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QLJ-EkK1c3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -14,10 +19,4 @@ Check the site sections:
 * [IAM: Additional topics](IAM-More-Topics/index.md). Provides assorted guides to Identity and Access Management (IAM) products.  
 * [Other topics](Other-Topics/index.md). 
 
-!!! note
-    More examples are on the way, so check back for updates soon. 
-
-## Under construction 
-
-As of November 2023, this site is under construction and may not include all examples.   
-
+More examples are on the way, so check back for updates soon. 

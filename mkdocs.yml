@@ -32,6 +32,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+site_dir: '../iam-docs-site'
+
 extra:
   social: 
     - icon: fontawesome/brands/linkedin

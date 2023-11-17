@@ -67,7 +67,7 @@ As an app engineer, you have the ability to modify the stylesheet thereby ensuri
 
 After making changes to the stylesheet, you should rebuild the app and publish it on Google Play and in Apple Store.  
 
-!!! note "**Learn more**:"   
-    * [Stylesheet structure](stylesheet-spec.md#stylesheet-specification)  
-    * [Style matching logic](stylesheet-spec.md#style-matching)  
-    * [Stylesheet example](stylesheet-spec.md#stylesheet-example)
+!!! note "**Learn how to use the stylesheet**:"   
+    * [Structure](stylesheet-spec.md#stylesheet-specification)  
+    * [Matching logic](stylesheet-spec.md#style-matching)  
+    * [Example](stylesheet-spec.md#stylesheet-example)

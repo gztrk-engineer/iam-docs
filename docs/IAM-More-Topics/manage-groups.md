@@ -11,7 +11,7 @@ You can manage the groups through the [Groups API]().
 You can categorize users based on certain criteria and then look up necessary information or perform batch actions:  
 
 - Congratulate FC Manchester City fans on another championship.
-- Send your best Diwali wishes to Indian users.
+- Send your best Diwali wishes to Indian customers.
 - Search for experts within an HR or R&D group.
 
 Depending on your use case, you may use the groups for research purposes. Consider fetching users, identifying their group memberships, and analyzing common patterns.  
