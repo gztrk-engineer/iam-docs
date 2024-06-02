@@ -6,7 +6,7 @@ At this stage, you need to set up your organization(s). You can add an organizat
 
 Here's an example request that creates an organization:  
 
-```shell
+```sh
 curl -i -X POST \
   {{BASE_URL}}/v1/organizations \
   -H 'Authorization: Bearer <YOUR_JWT_HERE>' \
@@ -25,7 +25,6 @@ When the platform saves an organization, it assigns it a unique ID. Later on, yo
 
 ## Step 2: Enable authentication  
 
-
 You have the following authentication options:  
 
 Option to implement | Description 
@@ -36,7 +35,6 @@ Hosted application | Implement Transmit's hosted app experience.
 
 
 ## Step 3: Assign organization administrators 
-
 
 Now you need to add an organization admin. An organization admin can use the org admin portal: add organization members and management apps, view available roles and assign them to the members. 
 
@@ -57,7 +55,6 @@ curl -i -X POST \
       "Organization Admin"
     ]
   }'
-
 ```
 
 ## Step 4: Invite members
@@ -108,7 +105,7 @@ When saving the user, the platform marks their account as `Pending` and sends th
 
 !!! note
     You can invite a user to multiple organizations.
-    If you use a hosted application, users who have memberships in multiple organizations 
+    If you use a hosted application, users who have memberships in multiple organizations will need to choose the organization manually.  
 
 Visit [Manage users]() for additional information.  
 

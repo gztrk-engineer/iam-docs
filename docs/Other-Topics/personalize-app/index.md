@@ -12,7 +12,6 @@ The app's appearance is defined in a JSON stylesheet file, located in the projec
 
 As an engineer responsible for personalizing the app, your tasks involves updating the stylesheet. Proficiency in JSON data format is necessary for this task, and knowledge of HTML/CSS is also beneficial due to the similarity in style matching logic.  
 
-
 ## How the app defines the styles 
 
 The app's user interface is defined in the view files located in the `assets/views` folder. Each element is identified by two or more tags. The array often begins with the element type and context or location:  

@@ -54,7 +54,7 @@ A role group is a collection of roles an application can create and assign to or
 To set up a role group or add existing roles to it, you have the following options:  
 
 - Invoke [this API call](/openapi/user/role-groups/#operation/createRoleGroup). 
-- Go to the Admin Portal (**Identity Management** > **Roles**) and create a role group **Groups** tab.  
+- Go to the Admin Portal (**Identity Management** > **Roles**) and create a role group on the **Groups** tab.  
 
 Here's an example API call that creates a role:  
 
@@ -78,11 +78,10 @@ curl -i -X POST \
 
 ## Step 3: Assign roles to members  
 
-<div class="badge-wrapper">
+<!-- <div class="badge-wrapper">
     <div class="badge">Application</div>
     <div class="badge">Organization</div>
-</div>
-
+</div> -->
 To manage the members' access to an app, an organization can assign roles to its members. The organization can only choose the roles from the role groups that the application assigned to the organization. 
 You can assign roles via API for [new members]() or [existing members](), and via the Admin Portal (**Identity Management** > **Organizations**, then open the **Members** tab on your organization's page). 
 
@@ -107,11 +106,11 @@ curl -i -X POST \
 
 ## Step 4: Retrieve member roles  
 
-You can get members' roles from [identity]() and [access]() tokens, or via [Members API]().  
+You can get members' roles from [identity]() and [access]() tokens, or via the [Members API]().  
 
 ### Retrieving member roles from the tokens  
 
-You can get role names from ID tokens and role ID from access tokens:  
+You can get role names from identity tokens and role IDs from access tokens:  
 
 1. Decode the tokens. 
 2. Retrieve the values:  
@@ -126,13 +125,13 @@ Example `role_values` claim:
 Example `roles` claim:  
 
 ```json
-// This claim provides role IDs instead of role values
+// This claim provides role IDs instead of role values, except for the default roles. 
 { "roles": ["943abcdhu8ykuwdi2lmzm", "65vjd08hu8ykuwdi2lmzm", "Organization Admin"] }
 ```
 
 ### Retrieving member roles via API  
 
-To get member roles via [Members API](), invoke [this API call]() call and retrieve the info from the output. 
+To get member roles via the [Members API](), invoke [this API call]() call and retrieve the info from the output. 
 Example API request:  
 
 ```shell
@@ -172,8 +171,7 @@ Example API call output:
 }
 ```
 
-
-### Fetch role permissions
+### Fetching role permissions
 
 You can fetch your app's permissions by sending [this API call]():  
 

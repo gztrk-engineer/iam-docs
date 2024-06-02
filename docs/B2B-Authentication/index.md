@@ -9,7 +9,7 @@ Here at Transmit, we allow B2B (business-to-business) customers to integrate Ide
 
 From a broad perspective, our platform enables B2B customers to: 
 
-- Enable organizations, e.g., the suppliers, and their employees to access corporate apps
+- Enable organizations, e.g., the suppliers and their employees to access corporate apps
 - Grant and revoke organization and user access to apps and resources   
 - Use role-based access controls (RBAC) for management of roles and permissions across applications
 - Integrate single sign-on (SSO) so users only need to log in once on all relevant apps

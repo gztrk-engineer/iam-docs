@@ -79,7 +79,6 @@ run();
 
 ## Step 3: Configure your IDP account 
 
-
 To login members using their own IDP, an organization must configure their IDP account to work with Transmit. Typically, this involves creating a client and configuring the redirect URI that users will be redirected to after authentication. The required parameters vary from provider to provider.  
 
 For the IDP client, the organization should specify the following redirect URI value: `{{BASE_URL}}/auth/sso/oidc/callback` 
@@ -87,14 +86,14 @@ For the IDP client, the organization should specify the following redirect URI v
 Also note the client ID and the client secret values the IDP normally generates upon saving the client. You will need them for SSO configuration.   
 
 !!! note "Learn more"
-    See [example Google IDP configurations](#google-idp-example). 
+    See [example configurations for Google IDP](#google-idp-example). 
 
 
 ## Step 4: Add SSO configuration  
 
 The OIDC SSO flow is initiated and completed by the B2B app on behalf of the organization.
 
-Configure the organization for OIDC SSO in the Transmit system. You can do this from the organization's settings in the Admin Portal (**Identity Management** > **Organizations**). You'll need to obtain the details from the OIDC IDP (for example,from their documentation):  
+Configure the organization for OIDC SSO in the Transmit system. You can do this from the organization's settings in the Admin Portal (**Identity Management** > **Organizations**). You'll need to obtain the details from the OIDC IDP (for example, from their documentation):  
 
 - Basic parameters:  
     * SSO configuration name  
@@ -107,14 +106,14 @@ Configure the organization for OIDC SSO in the Transmit system. You can do this 
     * **Email claim**: Name of the ID token claim that contains the user's primary email. Default value: `email`  
 
 
-## Google IDP example  
+## Example configurations for Google IDP 
 
 <!-- This section is linked from an above section (Configure your IDP account). -->
 
 To set up Google IDP, you need to go to [Google Credentials](https://console.cloud.google.com/apis/credentials), create an OIDC Client, and specify the following parameters:  
 
 - **Authorized redirect URIs**: Enter the default value: `https://api.transmitsecurity.io/cis/auth/sso/oidc/callback`.
-- **Authorized JavaScript origins**: Specify your production, staging, and/or development environments. Example development environment: `https://localhost:3000` (default for React JS).  
+- **Authorized JavaScript origins**: Specify your production, staging, and/or development environments. Example development environments: `https://localhost:3000` (default for React JS).  
 
 Google IDP generates new credentials (**Client ID** and **Client secret**) automatically. You can add new secrets after saving the OIDC client.  
 

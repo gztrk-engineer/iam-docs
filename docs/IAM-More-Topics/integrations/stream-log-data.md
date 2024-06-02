@@ -19,7 +19,7 @@ Prebuilt plugins are normally better optimized for our platform and the consumer
 
 There are multiple patterns a plugin can use to share data with target systems: API polling, pub/sub, and so on. No matter which pattern is implemented, a prebuilt plugin is easier to set up and configure than starting from scratch.  
 
-To feed data into Splunk, use [Security Events Plugin](stream-splunk.md). 
+To feed data into Splunk, use the [Security Events Plugin](stream-splunk.md). 
 
 More plugins are on the way, so check back soon.  
 

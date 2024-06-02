@@ -18,11 +18,12 @@ If you choose **Default** under **SMS Provider**, the platform will dispatch all
 
 You can set up Twilio as your SMS provider from the Admin Portal. 
 
-From **Settings** > **SMS provider**, select **Twilio** as the SMS provider and configure the following settings:
+From **Settings** > **SMS provider**, select **Twilio** as the SMS provider and configure the following settings:  
+
 - **Account SID**: your Twilio account SID
 - **Auth Token**: your Twilio auth token
 - **Sender setting**: Allows you to either configure the sender phone number directly, or the Messaging Service ID to use the sender settings configured for your Twilio [Messaging Service](https://www.twilio.com/docs/messaging/services)
-
+  
 !!! note
     After saving, you should verify that SMS messages are sent as expected.
 
@@ -89,7 +90,8 @@ X-API-Key: abcd1234-0fae-4ce6-97c4-ca9ad4123b0d \
 X-Scheme: https \
 X-Verification-Key: AbCdZ3hJxx826qTmvwepy \
 ```  
-Each validation request includes a random `X-Verification-Key` value in the header. The verification endpoint should extract this value and echo it back in the response body so Transmit can match the request and response.  
+Each validation request includes a random `X-Verification-Key` value in the header. The verification endpoint should extract this value and echo it back in the response body so Transmit can match the request and response. 
+
 Here's an example implementation that can process the validation challenge:  
 
 ```js
@@ -114,7 +116,8 @@ app.define('/send-sms','GET', function(req, res) {
 }
 ```
 
-3. Register your endpoints on the platform. To do that, send a one-time request like this:    
+
+After the validation challenge, register your endpoints on the platform. To do that, send a one-time request like this:    
 
 ```shell
 curl --location --request PUT 'https://api.transmitsecurity.io/cis/v1/tenantsmsproviders' \

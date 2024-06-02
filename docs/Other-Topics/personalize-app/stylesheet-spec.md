@@ -59,7 +59,6 @@ To reuse properties, utilize [style variables](#style-variables).
 
 The available properties depend on the element type. Refer to [List of available properties]() for more information. 
 
-
 ## Variables 
 
 Style variables can be reused throughout the `styles` section. These variables are defined within the `values` object.

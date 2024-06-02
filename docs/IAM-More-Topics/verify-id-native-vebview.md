@@ -20,7 +20,7 @@ To create your first identity verification session, you need to do the following
 2. Obtain an access token on your backend. See [Step 2](/guides/verify/quick_start_web/#step-2-get-access-token) in the hosted experience guide.
 3. Use that access token to create a session. See [Step 3](/guides/verify/quick_start_web/#step-3-create-session) in the hosted experience guide. This will include the following:  
     3.1. The client will request the backend to create a session.  
-    3.2. The backend response will contain a `start_token`. You can use this token to start the verification on the client side.
+    3.2. The backend response will contain a `start_token`. You can use this token to start the verification on the client side.  
 
 Step 3 requires you to set the session `callback_url` value to a URL which will activate your app. See [Step 3: Handle completion callback](#step-3-handle-completion-callback) below for additional information.
 
@@ -31,7 +31,7 @@ For additional context, see the [Implement IDV hosted expirience](/guides/verify
 After creating your session, you need to direct your end user to the identity verification page: 
 
 1. Use the `start_token` from the response (see API documentation for [this call](/openapi/verify/verifications/#operation/createSession!c=200&path=start_token&t=response)) to open the in-app browser tab. This is where the verification process will take place. Your options: 
-    * On Android, you can use `CustomTabs` or `WebView`.  
+    * On Android, you can implement `CustomTabs` or `WebView`.  
     * On IOS, use `ASWebAuthenticationSession`.  
 2. Make sure the in-app browser points to our web app: `https://api.transmitsecurity.io/verify/app/{start_token}` 
 
@@ -47,7 +47,6 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
        }
    }
 }
-
 private fun startCustomTabsActivity() {
    // Building the intent and starting the CustomTabsActivity
    val customTabIntent: Intent
@@ -156,6 +155,20 @@ When processing the callback, note the `session_id` and `state` params. You’ll
 
 See the results section (step 5 of the [IDV hosted experience guide](/guides/verify/quick_start_web/#step-5-get-verification-result)) and the [API reference](/openapi/verify/verifications/#operation/getResult) for more details.  
 
+## Required permissions 
+
+### Android permissions 
+
+The following permissions should be generated for native Android WebView:
+
+- `android.permission.INTERNET`: This permission allows the app to access the Internet.
+- `android.permission.CAMERA`: This permission allows the app to use the device's camera.
+
+### iOS permissions  
+
+Your app requires camera permissions in order to capture the images required for the verification process.
+Open the `Info.plist` file as a Property List and add the following key: **Privacy** - **Camera Usage Description**. The key value contains an explanation for why the permission is needed, which will be displayed to the user to approve. For example: `This is needed to capture images for the verification process`.
+
 ## Implementation notes
 
 ### IOS implementation notes  
@@ -208,21 +221,7 @@ The **console app redirect URI** and **client-side redirect URI** are not the sa
 
 ![](../assets/img/idv_psdev.png)  
 
-## Required permissions 
-
-### Android permissions 
-
-The following permissions should be generated for native Android WebView:
-
-- `android.permission.INTERNET`: This permission allows the app to access the Internet.
-- `android.permission.CAMERA`: This permission allows the app to use the device's camera.
-
-### iOS permissions  
-
-Your app requires camera permissions in order to capture the images required for the verification process.
-Open the `Info.plist` file as a Property List and add the following key: **Privacy** - **Camera Usage Description**. The key value contains an explanation for why the permission is needed, which will be displayed to the user to approve. For example: `This is needed to capture images for the verification process`.
-
-## Known issues and troubleshooting  
+## Known issues  
 
 ### Native IOS - WebKit Bug 253186
 

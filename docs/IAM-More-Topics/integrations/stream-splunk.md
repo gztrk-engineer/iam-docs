@@ -45,6 +45,7 @@ After installation, the browser redirects you to the **Apps** page. This page no
 ## Step 3: Configure the inputs  
 
 Now you need to launch the app and configure the following inputs:   
+
 - Inputs for User Activity (logins, etc.) 
 - Inputs for administrative audit logs: application created, group created, and so on
 

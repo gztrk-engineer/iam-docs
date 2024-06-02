@@ -1,6 +1,6 @@
 site_name: IAM Docs
 # site_url: https://iam-docs.pro
-theme: material
+theme: mkdocs  # material
 
 #   features: 
 #     - navigation.tabs
@@ -27,10 +27,10 @@ theme: material
 #       primary: teal
 #       accent: lime 
 
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+# markdown_extensions:
+#   - admonition
+#   - pymdownx.details
+#   - pymdownx.superfences
 
 site_dir: '../iam-docs-site'
 

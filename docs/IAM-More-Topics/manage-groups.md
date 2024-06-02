@@ -14,7 +14,7 @@ You can categorize users based on certain criteria and then look up necessary in
 - Send your best Diwali wishes to Indian customers.
 - Search for experts within an HR or R&D group.
 
-Depending on your use case, you may use the groups for research purposes. Consider fetching users, identifying their group memberships, and analyzing common patterns.  
+Depending on your use case, you may use the groups for research. Consider fetching users, identifying their group memberships, and analyzing common patterns.  
 
 ## Step 1: Create groups  
 

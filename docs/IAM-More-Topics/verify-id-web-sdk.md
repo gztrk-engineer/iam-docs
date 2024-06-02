@@ -21,11 +21,12 @@ The diagram below maps the IDV process stages with the required implementation s
 
 To integrate your app with Transmit, you'll need to configure an application in the Admin Portal.  
 
-From the [Applications](https://portal.transmitsecurity.io/applications) page, [create an application](/guides/user/create_new_application.md) or use an existing application. Enter the following settings:
+From the [Applications](https://portal.transmitsecurity.io/applications) page, [create an application](/guides/user/create_new_application.md) or use an existing application. Enter the following settings:  
+
 1. For **Client type** , select **Web**.  
 2. For **Redirect URI** , enter your website URL. This is a required field.  
 
-Your client ID and client secret for API calls are auto generated upon app creation.  
+Your client ID and client secret for API calls are auto generated once you've created the app.  
 
 ## Step 2: Implement callback 
 
@@ -91,7 +92,7 @@ window.tsPlatform.initialize({ clientId: [CLIENT_ID], IDV: {
 
 ## Step 5: Get access token
 
-An access token is required to authorize the backend API calls, such as for [creating a verification session](#step-6-create-session) and [obtaining the result](#step-8-get-verification-result). When needed, obtain an access token using the /token request below. See [Get client access tokens guide](https://developer.transmitsecurity.com/guides/user/retrieve_client_tokens/) for more information. 
+An access token is required to authorize the backend API calls, such as for [creating a verification session](#step-6-create-session) and [obtaining the result](#step-8-get-verification-result). When needed, obtain an access token using the `/token` request below. See the [Get client access tokens](https://developer.transmitsecurity.com/guides/user/retrieve_client_tokens/) guide for more information. 
 
 
 ```javascript
@@ -123,7 +124,6 @@ run();
 ## Step 6: Create session
 
 Before your app can initiate the verification process, your backend must create a session in order to provide a secure context for the flow. Create a session by sending a `/v1/verification` request.
-
 
 ```javascript
 import fetch from 'node-fetch';
@@ -197,7 +197,6 @@ async function run() {
 }
 run();
 ```
-
 
 ## Step 9: Handle verification result
 

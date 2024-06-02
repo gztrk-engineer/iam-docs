@@ -2,11 +2,11 @@
 
 Transmit implements a tenant-based model that includes organizations, users, and applications. You can manage multiple tenants, each serving a separate set of organizations and apps. 
 
-What brings the tenant-based model together is user memberships and the role based access controls: typically, a user needs to be an organization member to have access to apps' roles and permissions. 
+What brings the tenant-based model together is user memberships and role-based access controls: typically, a user needs to be an organization member to have access to apps' roles and permissions. 
 
 ![](../assets/img/b2b_tenant_simple.png)
 
-The functionality is available through both the Admin Portal and via APIs.  
+The functionality is available both through the Admin Portal and via the APIs.  
 
 ## About organizations 
 
@@ -14,7 +14,7 @@ The functionality is available through both the Admin Portal and via APIs.
 
 Organizations represent your business customers or partners. For instance, a food delivery service might give restaurants and kitchens special access to their app so they can see orders and send out deliveries.  
 
-Organizations are created on the tenant level; each organization can be provided access to one or more applications.  
+Organizations are created on the tenant level; each organization can be granted access to one or more applications.  
 
 You can manage organizations via our APIs or through the Admin Portal. In addition to this, we provide special tools like dedicated APIs and self-service portals so the organizations can control their own memberships if they want. 
 
